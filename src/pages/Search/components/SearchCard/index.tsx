@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonAction from '../../../../core/components/ButtonAction';
 import { User } from '../../../../core/types/User';
+import { dateFormatted } from '../../../../core/utils/date';
 import './styles.scss';
 
 type Props = {
@@ -47,7 +48,7 @@ const SearchCard = ({ user }: Props) => (
                     </li>
 
                     <li>
-                        <span className="main-info-bold">Membro desde:</span> {user.created_at}
+                        <span className="main-info-bold">Membro desde:</span> {dateFormatted({date: user.created_at})}
                     </li>
                 </ul>
             </div>
