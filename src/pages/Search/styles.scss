@@ -1,0 +1,38 @@
+.search-container {
+    height: calc(100vh - 62px);
+    padding: 55px 95px 70px 95px;
+}
+
+.search-form {
+    height: 270px;
+    background: #E6F7FF;
+    border-radius: 16px;
+    padding: 65px 0 40px 95px;
+
+    h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        color: #262626;
+    }
+
+    input {
+        margin-top: 10px;
+        background: #FFFFFF;
+        width: 675px;
+        height: 40px;
+        border: 1px solid #D9D9D9;
+        border-radius: 4px;
+        display: block;
+        outline: none;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+.btn-encontrar {
+    margin-top: 25px;
+}
