@@ -1,5 +1,15 @@
-import axios from 'axios';
+import axios, { Method } from 'axios';
 
-export const makeRequest = () => {
-    
+type RequestParams = {
+    method?: Method;
+    url: string;
+}
+
+const BASE_URL = 'https://api.github.com/users';
+
+export const makeRequest = ({ method = 'GET', url }: RequestParams) => {
+    return axios({
+        method,
+        url: `${BASE_URL}${url}`
+    })
 }
